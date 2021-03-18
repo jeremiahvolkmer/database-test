@@ -1,0 +1,5 @@
+Feature: Create, Read, Update and Delete a user from the database.
+	User should be able to perform basic database inquires. 
+	
+
+
