@@ -78,6 +78,7 @@ public class Person
 	 * over rides default toString method 
 	 * Post- returns a String object of persons name and age in pretty format 
 	 ************************************************************************/
+	@Override
 	public String toString()
 	{
 		return String.format("\n%11s%15s\n%11s%15d\n","Name: ",getName(),"Age: ",getAge());

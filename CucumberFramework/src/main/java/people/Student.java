@@ -54,6 +54,7 @@ public class Student extends Person
 	 * returns a String in comma separated format that is ready to be used 
 	 * by the Database writeCommaSepertated method.
 	 ********************************************************************/
+	@Override
 	public String toFile()
 	{
 		return TYPE + "," + super.toFile() + "," + status + "," + gpa; 
@@ -65,6 +66,7 @@ public class Student extends Person
 	 * returned by toFile. This string is ready to use by DatabaseStorage
 	 *  write and prettyWritePerson methods.
 	 **********************************************************************/
+	@Override
 	public String prettyToFile()
 	{
 		return "  " + TYPE + " " + super.toString() + String.format("%10s%15s\n%10s%15.2f\n",
@@ -110,6 +112,7 @@ public class Student extends Person
 	 * over rides parent classes toString method
 	 * Post- returns a string object in pretty format
 	 *********************************************************************/
+	@Override
 	public String toString()
 	{
 		return super.toString() + String.format("%11s%15s\n%11s%15.2f\n%11s%15s\n",

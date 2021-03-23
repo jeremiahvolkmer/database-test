@@ -1,16 +1,20 @@
 package stepsFile;
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import database.CollegeDatabase;
+import org.junit.Assert; 
 
 public class AddUser 
 {
+	private CollegeDatabase db; 
+	
+	
 	@Given("^User enters valid person object\\.$")
 	public void user_enters_valid_person_object() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Yellow Submarine");
+		  Assert.assertEquals("test",3,3);
 	}
 
 	@And("^The persons name is unique to the database$")

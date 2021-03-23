@@ -2,8 +2,6 @@ package database;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
-import java.util.Scanner;
-
 import people.*;
  
 
@@ -15,7 +13,7 @@ public class DataClient
 		  * Initiates a DatabaseStorage object and reads in a file of person objects.   
 		  **************************************************************************/
 		 DatabaseStorage test = new DatabaseStorage(File.separator + "home" + File.separator
-				 									+ "dog" + File.separator + "College.txt");
+				 									+ "bluedog" + File.separator + "College.txt");
 		 CollegeDatabase db = test.read();
 		 
 		 /**************************************************************************
@@ -56,11 +54,11 @@ public class DataClient
 		  * Testing CollegeDatabase delete method. Returns true if person was deleted
 		  **************************************************************************/
 		 System.out.println("Deleting persons in array: ");
-		 System.out.println(db.delete("Virginia Alcott"));
-		 System.out.println(db.delete("Henry Nyguen"));
-		 System.out.println(db.delete("Wilbur Grant"));
+		// System.out.println(db.delete("Virginia Alcott"));
+		// System.out.println(db.delete("Henry Nyguen"));
+		// System.out.println(db.delete("Wilbur Grant"));
 		 extraLine();
-		 
+		test.writeCommaSeperated(db); 
 		 /**************************************************************************
 		  * Testing CollegeDatabase separation methods.
 		  **************************************************************************/

@@ -80,6 +80,7 @@ public class CollegeDatabase implements Database
 	 * runs a check that no duplicate names are added to database. 
 	 * Post- adds new person to existing Person database.
 	 ************************************************************/
+	@Override
 	public void add(Person person)
 	{   
 		if(size == entry.length)
@@ -112,6 +113,7 @@ public class CollegeDatabase implements Database
 	 * Post- deletes a person from the database if found and returns
 	 * true, if not found returns false.
 	 ***********************************************************/
+	@Override
 	public boolean delete(String name)
 	{
 		int location = findLocation(name);
@@ -132,6 +134,7 @@ public class CollegeDatabase implements Database
 	 * Post- returns a person object if persons name is found. If 
 	 * name is not found null is returned. 
 	 ***********************************************************/
+	@Override
 	public Person search(String name)
 	{
 		int location = findLocation(name);
