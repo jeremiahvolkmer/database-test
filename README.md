@@ -1,2 +1,2 @@
 # database-test
-Testing suit for java array database. 
+Testing suite for java array database. 
